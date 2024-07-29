@@ -1,0 +1,8 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+$pm-primary-palette: mat.$azure-palette;
+$pm-primary-dark-palette: mat.$azure-palette(200, 50, 400);
+$pm-accent-palette: mat.$m2-deep-orange-palette;
+$pm-warn-palette: mat.$red-palette;
+
