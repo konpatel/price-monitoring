@@ -1,0 +1,100 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "*-routing.module.ts",
+    "environments/**",
+    "*.spec.ts",
+    "test.ts",
+    "main.ts"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "block-spacing": "error",
+        "no-console": "warn",
+        "no-empty": 0,
+        "consistent-return": "error",
+        "no-multiple-empty-lines": "warn",
+        "space-before-function-paren": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-irregular-whitespace": "warn",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "max-len": [
+          "warn",
+          {
+            "code": 150
+          }
+        ],
+        "max-statements-per-line": "error",
+        "no-var": "error",
+        "object-curly-spacing": [
+          "warn",
+          "always"
+        ],
+        "array-bracket-spacing": [
+          "warn",
+          "never"
+        ],
+        "no-eq-null": "warn",
+        "vars-on-top": "warn",
+        "no-duplicate-imports": "error",
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-use-before-define": "warn",
+        "@typescript-eslint/explicit-function-return-type": "warn",
+        "@typescript-eslint/typedef": [
+          "error",
+          {
+            "arrayDestructuring": true,
+            "arrowParameter": true,
+            "memberVariableDeclaration": false,
+            "objectDestructuring": true,
+            "parameter": true,
+            "propertyDeclaration": true,
+            "variableDeclaration": true,
+            "variableDeclarationIgnoreFunction": true
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "tp",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "tp",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
